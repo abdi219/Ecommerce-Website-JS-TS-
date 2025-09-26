@@ -1,0 +1,37 @@
+
+/* Light theme (default) */
+:root {
+	--bg-color: #f8f9fa;
+	--text-color: #222;
+	--card-bg: #fff;
+	--border-color: #e0e0e0;
+}
+
+body {
+	background: var(--bg-color);
+	color: var(--text-color);
+	transition: background 0.3s, color 0.3s;
+}
+
+/* Dark theme */
+.dark {
+	--bg-color: #181a1b;
+	--text-color: #f8f9fa;
+	--card-bg: #23272f;
+	--border-color: #333;
+}
+
+.dark body {
+	background: var(--bg-color);
+	color: var(--text-color);
+}
+
+/* Example: style cards or containers */
+.card {
+	background: var(--card-bg);
+	color: var(--text-color);
+	border: 1px solid var(--border-color);
+	border-radius: 8px;
+	padding: 1rem;
+	transition: background 0.3s, color 0.3s, border 0.3s;
+}
